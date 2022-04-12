@@ -3,6 +3,7 @@ const Sobre = () => {
     <div>
       <h1>Pagina sobre</h1>
       
+      Meu nome é { process.env.NEXT_PUBLIC_NOME }
 
       <ul>
         <li><a href="/sobre/tayse">Tayse</a></li>
