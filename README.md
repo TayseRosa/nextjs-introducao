@@ -38,7 +38,7 @@ Comportamento natural do React JS, operações no lado do cliente, renderiza no 
 **SSR - Server-Side Rendering**
 
 Processamento no servidor, e joga o RESULTADO processado para o cliente
-(getServerSideProps )
+(getServerSideProps)
 
 **SSG - Static-Site Generation**
 
