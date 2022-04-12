@@ -4,6 +4,7 @@
 - [Demo](#demo)
 - [🛠 Sobre o projeto](#-sobre-o-projeto)
 - [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
+- [Diferenças entre CSR, SSR, SSG](#diferenças-entre-csr-ssr-ssg)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -23,6 +24,23 @@
 
 - [x] NEXT JS
 - [x] TYPESCRIPT
+- [x] CONSULTA DE API
+- [x] CSR, SSR, SSG
+- [ ] Cache
+
+# Diferenças entre CSR, SSR, SSG
+**CSR - Client-Side Rendering**
+
+Comportamento natural do React JS, operações no lado do cliente, renderiza no dispositivo do client.
+
+**SSR - Server-Side Rendering**
+
+Processamento no servidor, e joga o RESULTADO processado para o cliente
+
+**SSG - Static-Site Generation**
+
+Carrega a estrutura básica já processada no servidor(exemplo: Carrega o logado ou nao do usuario) e o miolo do site é carregado no cliente.
+
 
 # 📥 Como usar
 ```js
