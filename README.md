@@ -29,6 +29,8 @@
 - [ ] Cache
 - [ ] getStaticProps
 - [ ] ISR - Incremental Static Generation
+- [ ] VARIAVEIS DE AMBIENTE
+- [ ] Scripts externos no NextJS
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**

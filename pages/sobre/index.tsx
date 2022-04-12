@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 const Sobre = () => {
   return(
     <div>
@@ -9,6 +11,14 @@ const Sobre = () => {
         <li><a href="/sobre/tayse">Tayse</a></li>
         <li><a href="/sobre/theo">Theo</a></li> 
       </ul>
+
+      <Script 
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+        onLoad={()=>{
+          startAnalytics
+        }}
+      />
     </div>
   )
 }
