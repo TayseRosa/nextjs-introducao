@@ -27,6 +27,7 @@
 - [x] CONSULTA DE API
 - [x] CSR, SSR, SSG
 - [ ] Cache
+- [ ] getStaticProps
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
