@@ -28,6 +28,7 @@
 - [x] CSR, SSR, SSG
 - [ ] Cache
 - [ ] getStaticProps
+- [ ] ISR - Incremental Static Generation
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
@@ -41,6 +42,7 @@ Processamento no servidor, e joga o RESULTADO processado para o cliente
 **SSG - Static-Site Generation**
 
 Carrega a estrutura básica já processada no servidor(exemplo: Carrega o logado ou nao do usuario) e o miolo do site é carregado no cliente.
+(getStaticPaths | getStaticProps)
 
 
 # 📥 Como usar
