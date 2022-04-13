@@ -5,6 +5,13 @@
 - [🛠 Sobre o projeto](#-sobre-o-projeto)
 - [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
 - [Diferenças entre CSR, SSR, SSG](#diferenças-entre-csr-ssr-ssg)
+  - [**CSR - Client-Side Rendering**](#csr---client-side-rendering)
+  - [**SSR - Server-Side Rendering**](#ssr---server-side-rendering)
+  - [**SSG - Static-Site Generation**](#ssg---static-site-generation)
+  - [**Hook useRouter(propriedades, funções, eventos)**](#hook-userouterpropriedades-funções-eventos)
+  - [**Usando o componente Link**](#usando-o-componente-link)
+  - [**Local apropriado para importar o arquivo de estilização css(Bootstrap)**](#local-apropriado-para-importar-o-arquivo-de-estilização-cssbootstrap)
+  - [**Usando CSS Modules no NextJS 1**](#usando-css-modules-no-nextjs-1)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -37,21 +44,21 @@
 - [x] USANDO O CSS MODULES NO NEXTJS
 
 # Diferenças entre CSR, SSR, SSG
-**CSR - Client-Side Rendering**
+## **CSR - Client-Side Rendering**
 
 Comportamento natural do React JS, operações no lado do cliente, renderiza no dispositivo do client.
 
-**SSR - Server-Side Rendering**
+## **SSR - Server-Side Rendering**
 
 Processamento no servidor, e joga o RESULTADO processado para o cliente
 (getServerSideProps)
 
-**SSG - Static-Site Generation**
+## **SSG - Static-Site Generation**
 
 Carrega a estrutura básica já processada no servidor(exemplo: Carrega o logado ou nao do usuario) e o miolo do site é carregado no cliente.
 (getStaticPaths | getStaticProps)
 
-**Hook useRouter(propriedades, funções, eventos)**
+## **Hook useRouter(propriedades, funções, eventos)**
 Propriedades:
 - const { slug } = router.query
 - {router.pathname}
@@ -78,7 +85,7 @@ outra forma de fazer a mesma coisa..
 
 ```
 
-**Usando o componente Link**
+## **Usando o componente Link**
 Ex: 
 ```js
 import Link from "next/link";
@@ -86,7 +93,7 @@ import Link from "next/link";
 <Link href="/pagina/subpagina"> Nome do Link </Link>
 ```
 
-**Local apropriado para importar o arquivo de estilização css(Bootstrap)**
+## **Local apropriado para importar o arquivo de estilização css(Bootstrap)**
 - [x] Arquivo: _app.tsx
 ```js 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -96,7 +103,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 </button>
 ```
 
-**Usando CSS Modules no NextJS 1**
+## **Usando CSS Modules no NextJS 1**
 - [x] Na raiz do projeto, criar a seguinte estrutura:
 components/MyButton/index.tsx
 components/MyButton/MyButton.module.css
