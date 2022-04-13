@@ -28,11 +28,11 @@
 - [x] CSR, SSR, SSG
 - [x] Cache
 - [x] getStaticProps
-- [x] ISR - Incremental Static Generation
+- [x] ISR - INCREMENTAL STATIC GENERATION
 - [x] VARIAVEIS DE AMBIENTE
-- [x] Scripts externos no NextJS
-- [x] Hook useRouter(propriedades, funções, eventos)
-- [x] Usando o componente Link
+- [x] SCRIPTS EXTERNOS NO NEXT JS
+- [x] HOOK useRouter(PROPRIEDADES, FUNÇÕES, EVENTOS)
+- [x] USANDO O COMPONENTE LINK
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**

@@ -21,7 +21,8 @@ const Sobre = () => {
         <li> <Link 
                 href="/sobre/theo"
                 replace
-        > Theo </Link> </li>
+                scroll={false}
+             > Theo </Link> </li>
       </ul>
 
       <button onClick={handleContadorBtn}>
