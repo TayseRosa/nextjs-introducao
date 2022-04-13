@@ -3,6 +3,8 @@ import Script from "next/script"
 import { useState } from "react"
 import { MyButton } from "../../components/MyButton";
 
+import styles from '../../styles/Sobre.module.css'
+
 const Sobre = () => {
 
   const [ contador, setContador ] = useState(0);
@@ -13,7 +15,7 @@ const Sobre = () => {
 
   return(
     <div>
-      <h1>Pagina sobre ({ contador })</h1>
+      <h1 className={styles.sobreTitle}>Pagina sobre ({ contador })</h1>
       
       Meu nome (na variável de ambiente) é: { process.env.NEXT_PUBLIC_NOME }
 

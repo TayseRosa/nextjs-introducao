@@ -12,6 +12,7 @@
   - [**Usando o componente Link**](#usando-o-componente-link)
   - [**Local apropriado para importar o arquivo de estilização css(Bootstrap)**](#local-apropriado-para-importar-o-arquivo-de-estilização-cssbootstrap)
   - [**Usando CSS Modules no NextJS 1**](#usando-css-modules-no-nextjs-1)
+  - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -41,7 +42,8 @@
 - [x] HOOK useRouter(PROPRIEDADES, FUNÇÕES, EVENTOS)
 - [x] USANDO O COMPONENTE LINK
 - [x] ESTILIZAÇÃO GLOBAL NO NEXT JS (BOOTSTRAP)
-- [x] USANDO O CSS MODULES NO NEXTJS
+- [x] USANDO O CSS MODULES NO NEXTJS(COMPONENTES)
+- [x] USANDO O CSS MODULES NO NEXTJS(PÁGINA)
 
 # Diferenças entre CSR, SSR, SSG
 ## **CSR - Client-Side Rendering**
@@ -144,6 +146,21 @@ import { MyButton } from "../../components/MyButton";
 .
 <MyButton label="Aumentar" onClick={handleContadorBtn} />
 ```
+## **Usando o CSS Modules no NextJs(página)**
+Diferentemente da importação nos componentes, quando se trata de Páginas, devemos importar direto do styles/globals.css, criando um arquivo por exemplo:
+Sobre.module.css:
+```js
+.sobreTitle{
+  color:blue
+}
+```
+E chamamos este arquivo lá no index:
+```js
+import styles from '../../styles/Sobre.module.css'
+
+<h1 className={styles.sobreTitle}> Pagina sobre </h1>
+```
+
 
 
 # 📥 Como usar
