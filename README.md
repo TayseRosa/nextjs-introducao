@@ -57,16 +57,6 @@ Propriedades:
 - isFallback(loading..) ex: {router.isFallback.toString()} 
 - router.push 
 
-**Local apropriado para importar o arquivo de estilização css**
-- [x] Arquivo: _app.tsx
-```js 
-import 'bootstrap/dist/css/bootstrap.css'
-
-<button className="btn btn-primary">
-    Aumentar
-</button>
-```
-
 
 Ex: 
 ```js
@@ -94,6 +84,17 @@ import Link from "next/link";
 
 <Link href="/pagina/subpagina"> Nome do Link </Link>
 ```
+
+**Local apropriado para importar o arquivo de estilização css**
+- [x] Arquivo: _app.tsx
+```js 
+import 'bootstrap/dist/css/bootstrap.css'
+
+<button className="btn btn-primary">
+    Aumentar
+</button>
+```
+
 
 
 # 📥 Como usar
