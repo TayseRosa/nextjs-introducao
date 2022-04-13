@@ -13,6 +13,7 @@
   - [**Local apropriado para importar o arquivo de estilização css(Bootstrap)**](#local-apropriado-para-importar-o-arquivo-de-estilização-cssbootstrap)
   - [**Usando CSS Modules no NextJS 1**](#usando-css-modules-no-nextjs-1)
   - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
+  - [**Usando o css-in-js no NextJs**](#usando-o-css-in-js-no-nextjs)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -44,6 +45,7 @@
 - [x] ESTILIZAÇÃO GLOBAL NO NEXT JS (BOOTSTRAP)
 - [x] USANDO O CSS MODULES NO NEXTJS(COMPONENTES)
 - [x] USANDO O CSS MODULES NO NEXTJS(PÁGINA)
+- [x] USANDO CSS-IN-JS NO NEXT JS
 
 # Diferenças entre CSR, SSR, SSG
 ## **CSR - Client-Side Rendering**
@@ -159,6 +161,24 @@ E chamamos este arquivo lá no index:
 import styles from '../../styles/Sobre.module.css'
 
 <h1 className={styles.sobreTitle}> Pagina sobre </h1>
+```
+
+## **Usando o css-in-js no NextJs**
+Dentro de qualquer arquivo:
+```js
+
+<ul className="lista">
+    <li> Teste 1 </li>
+    <li> Teste 2 </li>
+</ul>
+
+
+<style jsx>{`
+        .lista{
+          backgroundColor:#ff00ff;
+        }
+      `}
+</style>
 ```
 
 

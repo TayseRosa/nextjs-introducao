@@ -19,7 +19,7 @@ const Sobre = () => {
       
       Meu nome (na variável de ambiente) é: { process.env.NEXT_PUBLIC_NOME }
 
-      <ul>
+      <ul className="lista">
         <li> <Link href="/sobre/tayse"> Tayse </Link> </li>
         <li> <Link 
                 href="/sobre/theo"
@@ -33,6 +33,12 @@ const Sobre = () => {
       </button> */}
 
       <MyButton label="Aumentar" onClick={handleContadorBtn} />
+
+      <style jsx>{`
+        .lista{
+          backgroundColor:#ff00ff;
+        }
+      `}</style>
 
       <Script 
         src="https://www.google-analytics.com/analytics.js"
