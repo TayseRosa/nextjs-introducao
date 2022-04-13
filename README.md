@@ -1,7 +1,6 @@
 <h1 align="center"> Next JS</h1>
 
 #Índice
-- [Demo](#demo)
 - [🛠 Sobre o projeto](#-sobre-o-projeto)
 - [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
 - [Diferenças entre CSR, SSR, SSG](#diferenças-entre-csr-ssr-ssg)
@@ -14,14 +13,10 @@
   - [**Usando CSS Modules no NextJS 1**](#usando-css-modules-no-nextjs-1)
   - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
   - [**Usando o css-in-js no NextJs**](#usando-o-css-in-js-no-nextjs)
+  - [**Montando um layout único (template)**](#montando-um-layout-único-template)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
-
-# Demo
-<p align="center">
-<img src="./readme.gif" align="center" />
-</p>
 
 ---
 # 🛠 Sobre o projeto
@@ -46,6 +41,7 @@
 - [x] USANDO O CSS MODULES NO NEXTJS(COMPONENTES)
 - [x] USANDO O CSS MODULES NO NEXTJS(PÁGINA)
 - [x] USANDO CSS-IN-JS NO NEXT JS
+- [x] MONTANDO UM LAYOUT ÚNICO (TEMPLATE)
 
 # Diferenças entre CSR, SSR, SSG
 ## **CSR - Client-Side Rendering**
@@ -180,7 +176,10 @@ Dentro de qualquer arquivo:
       `}
 </style>
 ```
+## **Montando um layout único (template)**
+```js
 
+```
 
 
 # 📥 Como usar
