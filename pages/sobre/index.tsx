@@ -16,7 +16,7 @@ const Sobre = () => {
         src="https://www.google-analytics.com/analytics.js"
         strategy="afterInteractive"
         onLoad={()=>{
-          startAnalytics
+          
         }}
       />
     </div>

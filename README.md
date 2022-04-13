@@ -31,6 +31,7 @@
 - [ ] ISR - Incremental Static Generation
 - [ ] VARIAVEIS DE AMBIENTE
 - [ ] Scripts externos no NextJS
+- [ ] Hook useRouter(propriedades, funções, eventos)
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
@@ -47,6 +48,30 @@ Processamento no servidor, e joga o RESULTADO processado para o cliente
 Carrega a estrutura básica já processada no servidor(exemplo: Carrega o logado ou nao do usuario) e o miolo do site é carregado no cliente.
 (getStaticPaths | getStaticProps)
 
+**Hook useRouter(propriedades, funções, eventos)**
+Propriedades:
+- const { slug } = router.query
+- {router.pathname}
+- isFallback(loading..) ex: {router.isFallback.toString()} 
+- router.push 
+Ex: 
+```js
+    <button onClick={()=>{
+        router.push('/sobre/pedro')
+    }}> Ir para a página de Pedro 
+    </button>
+```
+outra forma de fazer a mesma coisa..
+```js
+    <button onClick={()=>{
+        router.push({
+            pathname: '/sobre/[slug]',
+            query: { slug: 'pedro' }
+        });
+    }}> Ir para a página de Pedro 
+    </button>
+
+```
 
 # 📥 Como usar
 ```js
