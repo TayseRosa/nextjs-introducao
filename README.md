@@ -26,12 +26,13 @@
 - [x] TYPESCRIPT
 - [x] CONSULTA DE API
 - [x] CSR, SSR, SSG
-- [ ] Cache
-- [ ] getStaticProps
-- [ ] ISR - Incremental Static Generation
-- [ ] VARIAVEIS DE AMBIENTE
-- [ ] Scripts externos no NextJS
-- [ ] Hook useRouter(propriedades, funções, eventos)
+- [x] Cache
+- [x] getStaticProps
+- [x] ISR - Incremental Static Generation
+- [x] VARIAVEIS DE AMBIENTE
+- [x] Scripts externos no NextJS
+- [x] Hook useRouter(propriedades, funções, eventos)
+- [x] Usando o componente Link
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
@@ -72,6 +73,15 @@ outra forma de fazer a mesma coisa..
     </button>
 
 ```
+
+**Usando o componente Link**
+Ex: 
+```js
+import Link from "next/link";
+
+<Link href="/pagina/subpagina"> Nome do Link </Link>
+```
+
 
 # 📥 Como usar
 ```js

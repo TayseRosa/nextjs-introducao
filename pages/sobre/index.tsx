@@ -1,16 +1,32 @@
+import Link from "next/link";
 import Script from "next/script"
+import { useState } from "react"
 
 const Sobre = () => {
+
+  const [ contador, setContador ] = useState(0);
+
+  const handleContadorBtn = () => {
+    setContador(contador + 1);
+  }
+
   return(
     <div>
-      <h1>Pagina sobre</h1>
+      <h1>Pagina sobre ({ contador })</h1>
       
-      Meu nome é { process.env.NEXT_PUBLIC_NOME }
+      Meu nome (na variável de ambiente) é: { process.env.NEXT_PUBLIC_NOME }
 
       <ul>
-        <li><a href="/sobre/tayse">Tayse</a></li>
-        <li><a href="/sobre/theo">Theo</a></li> 
+        <li> <Link href="/sobre/tayse"> Tayse </Link> </li>
+        <li> <Link 
+                href="/sobre/theo"
+                replace
+        > Theo </Link> </li>
       </ul>
+
+      <button onClick={handleContadorBtn}>
+        Aumentar
+      </button>
 
       <Script 
         src="https://www.google-analytics.com/analytics.js"
