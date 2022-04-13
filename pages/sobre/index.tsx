@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script"
 import { useState } from "react"
+import { MyButton } from "../../components/MyButton";
 
 const Sobre = () => {
 
@@ -25,9 +26,11 @@ const Sobre = () => {
              > Theo </Link> </li>
       </ul>
 
-      <button onClick={handleContadorBtn} className="btn btn-primary">
+      {/* <button onClick={handleContadorBtn} className="btn btn-primary">
         Aumentar
-      </button>
+      </button> */}
+
+      <MyButton label="Aumentar" onClick={handleContadorBtn} />
 
       <Script 
         src="https://www.google-analytics.com/analytics.js"

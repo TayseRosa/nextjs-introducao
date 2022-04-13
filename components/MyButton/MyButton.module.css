@@ -1,0 +1,9 @@
+.myBtn{
+  background-color: violet;
+  color:#fff;
+  padding:10px 20px;
+  border:0;
+  border-radius: 5px;
+  font-size: 16;
+  font-weight: bold;
+}

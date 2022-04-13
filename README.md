@@ -33,7 +33,8 @@
 - [x] SCRIPTS EXTERNOS NO NEXT JS
 - [x] HOOK useRouter(PROPRIEDADES, FUNÇÕES, EVENTOS)
 - [x] USANDO O COMPONENTE LINK
-- [x] ESTILIZAÇÃO GLOBAL NO NEXT JS
+- [x] ESTILIZAÇÃO GLOBAL NO NEXT JS (BOOTSTRAP)
+- [x] USANDO O CSS MODULES NO NEXTJS
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
@@ -85,7 +86,7 @@ import Link from "next/link";
 <Link href="/pagina/subpagina"> Nome do Link </Link>
 ```
 
-**Local apropriado para importar o arquivo de estilização css**
+**Local apropriado para importar o arquivo de estilização css(Bootstrap)**
 - [x] Arquivo: _app.tsx
 ```js 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -95,6 +96,47 @@ import 'bootstrap/dist/css/bootstrap.css'
 </button>
 ```
 
+**Usando CSS Modules no NextJS 1**
+- [x] Na raiz do projeto, criar a seguinte estrutura:
+components/MyButton/index.tsx
+components/MyButton/MyButton.module.css
+
+no arquivo MyButton.module.css:
+```js
+.myBtn{
+  background-color: violet;
+  color:#fff;
+  padding:10px 20px;
+  border:0;
+  border-radius: 5px;
+  font-size: 16;
+  font-weight: bold;
+}
+```
+
+no arquivo index.tsx, (criar o componente do botão):
+```js
+import styles from './MyButton.module.css';
+
+type Props = {
+  label:string;
+  onClick: ()=>void;
+}
+
+export const MyButton = ({ label, onClick }:Props) => {
+  return(
+    <button  onClick={onClick} className={styles.myBtn}> {label} </button>
+  )
+}
+```
+no arquivo que quiser chamar o componente MyButton, fazer da seguinte forma:
+```js
+import { MyButton } from "../../components/MyButton";
+.
+.
+.
+<MyButton label="Aumentar" onClick={handleContadorBtn} />
+```
 
 
 # 📥 Como usar
