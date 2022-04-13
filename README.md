@@ -58,7 +58,14 @@ Propriedades:
 - router.push 
 
 **Local apropriado para importar o arquivo de estilização css**
-_app.tsx
+- [x] Arquivo: _app.tsx
+```js 
+import 'bootstrap/dist/css/bootstrap.css'
+
+<button className="btn btn-primary">
+    Aumentar
+</button>
+```
 
 
 Ex: 
