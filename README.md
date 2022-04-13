@@ -33,6 +33,7 @@
 - [x] SCRIPTS EXTERNOS NO NEXT JS
 - [x] HOOK useRouter(PROPRIEDADES, FUNÇÕES, EVENTOS)
 - [x] USANDO O COMPONENTE LINK
+- [x] ESTILIZAÇÃO GLOBAL NO NEXT JS
 
 # Diferenças entre CSR, SSR, SSG
 **CSR - Client-Side Rendering**
@@ -55,6 +56,11 @@ Propriedades:
 - {router.pathname}
 - isFallback(loading..) ex: {router.isFallback.toString()} 
 - router.push 
+
+**Local apropriado para importar o arquivo de estilização css**
+_app.tsx
+
+
 Ex: 
 ```js
     <button onClick={()=>{

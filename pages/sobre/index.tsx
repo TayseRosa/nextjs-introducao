@@ -25,7 +25,7 @@ const Sobre = () => {
              > Theo </Link> </li>
       </ul>
 
-      <button onClick={handleContadorBtn}>
+      <button onClick={handleContadorBtn} className="btn btn-primary">
         Aumentar
       </button>
 
