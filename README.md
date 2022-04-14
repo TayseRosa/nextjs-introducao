@@ -177,8 +177,47 @@ Dentro de qualquer arquivo:
 </style>
 ```
 ## **Montando um layout único (template)**
+Criar a estrutura /components/Layout/index.tsx
 ```js
+import { ReactElement } from 'react'
+import styles from './Layout.module.css'
 
+type Props={
+  children: ReactElement
+}
+
+export const Layout = ({ children }:Props) => {
+  return(
+    <>
+    <header>
+      <h1>Cabeçalho</h1>
+    </header>
+
+    <main>{ children }</main>
+
+    <footer>Todos os direitos reservados</footer>
+    </>
+  )
+}
+```
+Criar a estrutura /components/Layout/Layout.module.css para estilização.
+
+Em _app deixar da seguinte forma:
+```js
+import '../styles/globals.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import type { AppProps } from 'next/app'
+import { Layout } from '../components/Layout'
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return(
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
+}
+
+export default MyApp
 ```
 
 
