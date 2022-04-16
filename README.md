@@ -16,6 +16,7 @@
   - [**Montando um layout único (template)**](#montando-um-layout-único-template)
   - [**Criando menu de navegação no NextJS Parte 1**](#criando-menu-de-navegação-no-nextjs-parte-1)
   - [**Criando menu de navegação no NextJS Parte 2**](#criando-menu-de-navegação-no-nextjs-parte-2)
+  - [**Usando Next/Head**](#usando-nexthead)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -45,6 +46,7 @@
 - [x] USANDO CSS-IN-JS NO NEXT JS
 - [x] MONTANDO UM LAYOUT ÚNICO (TEMPLATE)
 - [x] CRIANDO MENU DE NAVEGAÇÃO NO NEXTJS 1 
+- [x] USANDO NEXT/HEAD 
 
 # Diferenças entre CSR, SSR, SSG
 ## **CSR - Client-Side Rendering**
@@ -299,6 +301,22 @@ e no css correspondente adicionar :
 .linkActive a{
   color:#f00;
 }
+```
+
+## **Usando Next/Head**
+```js
+import Head from "next/head";
+.
+.
+.
+
+<Head>
+  <title>Sobre</title>
+  meta description
+  meta tags
+  css externos 
+  etc...Qualquer coisa que seja adicionada na tag <head> ... </head>
+</Head>
 ```
 
 

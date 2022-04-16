@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import Script from "next/script"
 import { useState } from "react"
 import { Layout } from "../../components/Layout";
@@ -17,6 +18,9 @@ const Sobre = () => {
   return(
     <Layout>
     <div>
+      <Head>
+        <title>Sobre</title>
+      </Head>
       <h1 className={styles.sobreTitle}>Pagina sobre ({ contador })</h1>
       
       Meu nome (na variável de ambiente) é: { process.env.NEXT_PUBLIC_NOME }
