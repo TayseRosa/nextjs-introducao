@@ -14,6 +14,7 @@
   - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
   - [**Usando o css-in-js no NextJs**](#usando-o-css-in-js-no-nextjs)
   - [**Montando um layout único (template)**](#montando-um-layout-único-template)
+  - [**Criando menu de navegação no NextJS 1**](#criando-menu-de-navegação-no-nextjs-1)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -42,6 +43,7 @@
 - [x] USANDO O CSS MODULES NO NEXTJS(PÁGINA)
 - [x] USANDO CSS-IN-JS NO NEXT JS
 - [x] MONTANDO UM LAYOUT ÚNICO (TEMPLATE)
+- [x] CRIANDO MENU DE NAVEGAÇÃO NO NEXTJS 1 
 
 # Diferenças entre CSR, SSR, SSG
 ## **CSR - Client-Side Rendering**
@@ -219,11 +221,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp
 ```
+## **Criando menu de navegação no NextJS 1**
+```js
+
+```
 
 
 # 📥 Como usar
 ```js
-
     //Clonar o repositório
     $ git clone https://github.com/TayseRosa/nextjs-primeiros-passos.git
 
