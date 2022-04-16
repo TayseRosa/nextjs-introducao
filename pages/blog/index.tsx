@@ -1,3 +1,4 @@
+import { Layout } from '../../components/Layout';
 import { Post } from '../../types/Post'
 
 type Props = {
@@ -10,6 +11,7 @@ const Blog = ({ name, posts }: Props) => {
 
 
   return(
+    <Layout>
     <div>
       <h1>Blog</h1>
       <p>Blog de { name } </p>
@@ -20,6 +22,7 @@ const Blog = ({ name, posts }: Props) => {
         )) }
       </ul>
     </div>
+    </Layout>
   )
 }
 

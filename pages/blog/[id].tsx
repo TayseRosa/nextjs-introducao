@@ -1,6 +1,7 @@
 import { Post } from "../../types/Post";
 import { GetStaticProps } from 'next'
 import { ParsedUrlQuery } from "querystring";
+import { Layout } from "../../components/Layout";
 
 type Props = {
   post: Post
@@ -8,12 +9,14 @@ type Props = {
 
 const BlogItem = ({ post }: Props) => {
   return(
+    <Layout>
     <div>
       <h1>Blog</h1>
       <h2> {  post.title } </h2>
 
       <p> { post.body } </p>
     </div>
+    </Layout>
   )
 }
 

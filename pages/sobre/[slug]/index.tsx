@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';
+import { Layout } from '../../../components/Layout';
 
 const SobreItem = () => {
   const router = useRouter();
@@ -21,6 +22,7 @@ const SobreItem = () => {
   },[]);
 
   return(
+    <Layout>
     <div>
       <h1> Pagina dinâmica de { slug } </h1>
 
@@ -34,6 +36,7 @@ const SobreItem = () => {
     </button>
     
     </div>
+    </Layout>
   )
 }
 

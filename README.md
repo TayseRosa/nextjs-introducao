@@ -296,7 +296,6 @@ Caso queira deixar APENAS o menu ativo com outra cor, fazer da seguinte forma:
 ```
 e no css correspondente adicionar :
 ```js
-
 .linkActive a{
   color:#f00;
 }

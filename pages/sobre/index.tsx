@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script"
 import { useState } from "react"
+import { Layout } from "../../components/Layout";
 import { MyButton } from "../../components/MyButton";
 
 import styles from '../../styles/Sobre.module.css'
@@ -14,6 +15,7 @@ const Sobre = () => {
   }
 
   return(
+    <Layout>
     <div>
       <h1 className={styles.sobreTitle}>Pagina sobre ({ contador })</h1>
       
@@ -48,7 +50,9 @@ const Sobre = () => {
         }}
       />
     </div>
+    </Layout>
   )
+  
 }
 
 export default Sobre
