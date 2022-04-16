@@ -222,9 +222,65 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp
 ```
 ## **Criando menu de navegação no NextJS 1**
+components/Navbar/index.tsx
 ```js
+import Link from "next/link";
+import { navigationLinks} from "../../utils/data";
+import styles from './Navbar.module.css'
 
+export const Navbar = () => {
+  return(
+    <ul className={styles.container}>
+      {navigationLinks.map((link, index)=>(
+        <li key={index} className={styles.linkItem}>
+          <Link href={link.path}>{link.label}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 ```
+
+Menus de navegação: utils/data.ts 
+```js
+export const navigationLinks = [
+  { label:'Home',path:'/' },
+  { label:'Sobre',path:'/sobre' },
+  { label:'Blog',path:'/blog' },
+  { label:'Exemplo',path:'/exemplo' }
+];
+```
+
+components/Navbar/Navbar.module.css
+```js
+.container{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.linkItem{
+  padding:0 15px;
+}
+
+.linkItem a{
+  color: #000;
+}
+
+.linkItem a:hover{
+  text-decoration: none;
+}
+```
+
+E chamar o componente Navbar em components/Layout/index.tsx
+```js
+import { Navbar } from '../Navbar'
+.
+.
+.
+<Navbar />
+```
+Pronto! Menu adicionado com sucesso!!!
 
 
 # 📥 Como usar

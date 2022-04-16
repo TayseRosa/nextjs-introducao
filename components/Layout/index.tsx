@@ -13,7 +13,6 @@ export const Layout = ({ children }:Props) => {
       <h1>Cabeçalho</h1>
     </header>
 
-    {/* Navbar */}
     <Navbar />
 
     <main>{ children }</main>
