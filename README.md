@@ -14,7 +14,8 @@
   - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
   - [**Usando o css-in-js no NextJs**](#usando-o-css-in-js-no-nextjs)
   - [**Montando um layout único (template)**](#montando-um-layout-único-template)
-  - [**Criando menu de navegação no NextJS 1**](#criando-menu-de-navegação-no-nextjs-1)
+  - [**Criando menu de navegação no NextJS Parte 1**](#criando-menu-de-navegação-no-nextjs-parte-1)
+  - [**Criando menu de navegação no NextJS Parte 2**](#criando-menu-de-navegação-no-nextjs-parte-2)
 - [📥 Como usar](#-como-usar)
 - [🚀 Autor](#-autor)
   
@@ -221,7 +222,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp
 ```
-## **Criando menu de navegação no NextJS 1**
+## **Criando menu de navegação no NextJS Parte 1**
 components/Navbar/index.tsx
 ```js
 import Link from "next/link";
@@ -281,6 +282,25 @@ import { Navbar } from '../Navbar'
 <Navbar />
 ```
 Pronto! Menu adicionado com sucesso!!!
+
+## **Criando menu de navegação no NextJS Parte 2**
+Caso queira deixar APENAS o menu ativo com outra cor, fazer da seguinte forma:
+```js
+<ul className={styles.container}>
+      {navigationLinks.map((link, index)=>(
+        <li key={index} className={ router.pathname===link.path ? styles.linkActive : styles.linkItem }>
+          <Link href={link.path}>{link.label}</Link>
+        </li>
+      ))}
+    </ul>
+```
+e no css correspondente adicionar :
+```js
+
+.linkActive a{
+  color:#f00;
+}
+```
 
 
 # 📥 Como usar
