@@ -1,27 +1,5 @@
 <h1 align="center"> Next JS</h1>
 
-#Índice
-- [🛠 Sobre o projeto](#-sobre-o-projeto)
-- [🚀 Tecnologias utilizadas neste projeto](#-tecnologias-utilizadas-neste-projeto)
-- [Diferenças entre CSR, SSR, SSG](#diferenças-entre-csr-ssr-ssg)
-  - [**CSR - Client-Side Rendering**](#csr---client-side-rendering)
-  - [**SSR - Server-Side Rendering**](#ssr---server-side-rendering)
-  - [**SSG - Static-Site Generation**](#ssg---static-site-generation)
-  - [**Hook useRouter(propriedades, funções, eventos)**](#hook-userouterpropriedades-funções-eventos)
-  - [**Usando o componente Link**](#usando-o-componente-link)
-  - [**Local apropriado para importar o arquivo de estilização css(Bootstrap)**](#local-apropriado-para-importar-o-arquivo-de-estilização-cssbootstrap)
-  - [**Usando CSS Modules no NextJS 1**](#usando-css-modules-no-nextjs-1)
-  - [**Usando o CSS Modules no NextJs(página)**](#usando-o-css-modules-no-nextjspágina)
-  - [**Usando o css-in-js no NextJs**](#usando-o-css-in-js-no-nextjs)
-  - [**Montando um layout único (template)**](#montando-um-layout-único-template)
-  - [**Criando menu de navegação no NextJS Parte 1**](#criando-menu-de-navegação-no-nextjs-parte-1)
-  - [**Criando menu de navegação no NextJS Parte 2**](#criando-menu-de-navegação-no-nextjs-parte-2)
-  - [**Usando Next/Head**](#usando-nexthead)
-- [📥 Como usar](#-como-usar)
-- [🚀 Autor](#-autor)
-  
-
----
 # 🛠 Sobre o projeto
 
 <p>Projeto desenvolvido para treinar habilidades de Next JS</p>
